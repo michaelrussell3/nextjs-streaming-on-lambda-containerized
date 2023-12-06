@@ -1,0 +1,9 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "nextjs-lambda-container"
+resolve_s3 = true
+s3_prefix = "nextjs-lambda-container"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+image_repositories = ["StreamingNextjsFunction=070157408176.dkr.ecr.us-east-1.amazonaws.com/nextjslambdacontainer6ea125e1/streamingnextjsfunctiona4f2f287repo"]
